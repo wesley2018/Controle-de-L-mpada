@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" 
+	tools:context="com.example.controle_remoto_app.ControleActivity">
+	
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:src="@drawable/logo" />
+    
+    <LinearLayout 
+        		android:id="@+id/linearLayoutLed1" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:paddingTop="150px"
+				android:background="#FFFFFF">
+	<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:textColor="#00BFFF"
+			android:textStyle="bold"
+			android:text="LÂMPADA" />
+		</LinearLayout>
+		
+        <TextView
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content"/>
+        <TextView
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content"/>
+	
+    <LinearLayout 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:background="#FFFFFF">
+	<ImageButton
+        android:id="@+id/btLampada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/on" />
+	
+		</LinearLayout>
+		
+        <TextView
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content"/>
+        <TextView
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content"/>
+ 
+	<TextView
+    		  android:layout_width="fill_parent" 
+    		  android:layout_height="wrap_content" 
+    		   android:textColor="#00BFFF"
+    		   android:textSize="30sp"
+    		   android:textStyle="bold"
+    		  android:gravity="center"
+    		  android:background="#FFFFFF"  
+    		  android:text="STATUS" />
+	<LinearLayout 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:background="#FFFFFF">
+	<TextView 
+			android:paddingRight="10px" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00BFFF"
+    		android:textSize="25sp"
+			android:textStyle="bold"
+			android:text="LÂMPADA:" />
+
+	<TextView
+	    android:id="@+id/tvStatusLampada"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="DESLIGADA"
+	    android:textColor="#00BFFF"
+    	android:textSize="25sp"
+	    android:textStyle="bold" >
+</TextView>
+		</LinearLayout>		
+</LinearLayout>
